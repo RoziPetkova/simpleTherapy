@@ -284,14 +284,22 @@ section#contact {
   opacity: 0.3;
 }
 
-#approach .approach-section:hover {
+#approach .approach-section:hover .fa-stack {
   color: #E9E7E5;
   cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out
 }
 
-#approach .approach-section:hover .fa-inverse {
-  color: #376a65ff;
+/* #approach .approach-section:hover .fa-inverse {
+  color: #E9E7E5;
   cursor: pointer;
+} */
+
+#approach .approach-section:hover h4 {
+  color: white;
+  cursor: pointer;
+  text-shadow: 1px 1px 10px #212529;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out
 }
 
 #portfolio .portfolio-item .portfolio-caption {
@@ -502,7 +510,7 @@ input[type="radio"]:checked + label{
 
 .logo-bg:before {    
   content: "";
-  background-image: url("../assets/img/logos/7.png");
+  background-image: url("../assets/img/logos/7.jpg");
   background-size: inherit;
   top: 2rem;
   right: 0px;
