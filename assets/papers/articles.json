@@ -1,0 +1,120 @@
+[
+    {
+        "id":"stat1",
+        "title": "Emotional Regulation",
+        "subtitle": "How to escape from overwelming situations",
+        "content": "Emotions are an integral part of our lives. They are the mental states that we experience that are comprised of our subjective feelings, how we perceive situations, and physiological responses. Emotions feed off on our subjective perception and amplify the charge that certain situations have for example a low-stress level inducing situation could be amplified by our emotion to be perceived as a much higher stress level inducing one. This hinders our ability to adapt to changes in our environment or our bodies thus rendering us vulnerable and unable to respond adequately and deal with the stress triggers with minimum engaged mental resources. That’s why it is important for us to be able to control and regulate our emotions so that we do not allow them to further affect our overall well-being. <br><br> One proposed model for emotional regulations comes from Gross (Gross et, 1998) who proposed that emotions could be regulated at five different points of the process of formation of the emotions. These points are situation selection, situation modification, attention deployment, change in cognitions, and response modulation. Emotional regulations can also be segregated by coping mood regulation, defense regulation, and affect regulation. Now a more recent study (Moyal et, al 2014) focused on three emotional regulations which they named as distraction and appraisal. <br><br> Distraction is a process that precedes emotion formation. The goal is to derive the attention away from negative triggers to neutral or even positive aspects. The way this is done is internally by focusing on the shape or size of certain stimuli or externally by focusing on more positive thoughts. The study reports that this has been particularly effective among patients diagnosed with depression. <br><br> Reappraisal also precedes emotion formation but much later than a distraction. This revaluation of the situation leads to reducing of negative feelings and is highly and patients who successfully adopt this strategy show a greater reduction of symptoms of depression. Furthermore, when explicitly asked patients to use reappraisal as an emotional regulation strategy report fewer negative effects from stimuli. <br><br> As the technologies develop further around us this allows for more stressful triggers to emerge which also invoke negative emotions. It seems imperative for our psychological well-being to be able to adapt to these triggers and be able to regulate certain emotions and not allow the low-stress level situations or triggers to be amplified by our emotions. At the same time, it is also important to not allow them to feed off these triggers and cause further discomfort. However to do so, perhaps an alternative way to do so is by analyzing the situation, being prepared that certain triggers are unavoidable, trying to maintain focus on the goal, and most importantly trying to maintain calm behavior knowing that even this situation and even this trigger soon will pass away.",
+        "date": "10.08.2023",
+		"imgLink": "assets/papers/pic/anxiety.jpg",
+        "author": "Atanas",
+        "lastName" : "Atanasov"
+    },
+
+
+    {
+        "id":"bbbb",
+        "title": "kur2",
+        "subtitle": "malykKur2",
+        "content": "detailsMember3 Lorem ipsum dolor sit amet, consectetur  <br>  <b> adipiscing  </b> <br> elit. Cras blandit est in faucibus ultrices. Nam venenatis tellus eget nisl laoreet, vel aliquet leo pharetra. Vivamus cursus, ipsum quis rutrum semper, risus dolor pellentesque lacus, vitae placerat nibh ipsum vitae lacus. Aliquam ac imperdiet felis, vitae consequat nisi. In hac habitasse platea dictumst. Cras lacinia lacus sodales justo lacinia, a vulputate ex venenatis. Phasellus neque dui, posuere at elit vitae, accumsan eleifend nunc. Phasellus dignissim lobortis ligula non dictum. Nam in massa vel lacus euismod tincidunt eget ut turpis. In accumsan lectus vitae elit mollis, fermentum tempor mi tristique. Pellentesque fermentum mattis odio tincidunt tincidunt. Curabitur rutrum est massa, a volutpat turpis ornare vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ornare sit amet justo non accumsan. Sed ac urna in enim mollis pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+        "date": "10.08.2023",
+		"imgLink": "assets/papers/pic/blue_man.jpg",
+        "author": "Rozalina", 
+        "lastName" : "Ivanov"
+    },
+    {
+        "id":"test",
+        "title": "kur3333",
+        "subtitle": "malykKur3333",
+        "content": "moqtaStatiq3333",
+        "date": "15.03.2023",
+		"imgLink": "assets/papers/pic/child_alone.jpeg",
+        "author": "Rozalina", 
+        "lastName" : "Ivanov"
+    },
+    {
+        "id":"test2",
+        "title": "kur444",
+        "subtitle": "malykKur444",
+        "content": "moqMalykKur444",
+        "date": "15.03.2023",
+		"imgLink": "assets/papers/pic/face_grid.jpg",
+        "author": "Rozalina", 
+        "lastName" : "Ivanov"
+    },
+    {
+        "id":"bbsb",
+        "title": "kur444",
+        "subtitle": "malykKur444",
+        "content": "moqMalykKur444",
+        "date": "15.03.2023",
+		"imgLink": "assets/papers/pic/anxiety.jpg",
+        "author": "Rozalina", 
+        "lastName" : "Ivanov"
+    },
+    {
+        "id":"dewwe",
+        "title": "kur444",
+        "subtitle": "malykKur444",
+        "content": "moqMalykKur444",
+        "date": "15.03.2023",
+        "link": "http://www.google.com",
+		"imgLink": "assets/papers/pic/meditation.jpg",
+        "author": "Rozalina", 
+        "lastName" : "Ivanov"
+    },
+    {
+        "id":"dewwsse",
+        "title": "kur444",
+        "subtitle": "malykKur444",
+        "content": "moqMalykKur444",
+        "date": "15.03.2023",
+        "link": "http://www.google.com",
+		"imgLink": "assets/papers/pic/anxiety.jpg",
+        "author": "Rozalina", 
+        "lastName" : "Ivanov"
+    },
+    {
+        "id":"dewwsdsse",
+        "title": "kur444",
+        "subtitle": "malykKur444",
+        "content": "moqMalykKur444",
+        "date": "15.03.2023",
+        "link": "http://www.google.com",
+		"imgLink": "assets/papers/pic/anxiety.jpg",
+        "author": "Rozalina", 
+        "lastName" : "Ivanov"
+    },
+    {
+        "id":"asdad",
+        "title": "kur444",
+        "subtitle": "malykKur444",
+        "content": "moqMalykKur444",
+        "date": "15.03.2023",
+        "link": "http://www.google.com",
+		"imgLink": "assets/papers/pic/anxiety.jpg",
+        "author": "Rozalina", 
+        "lastName" : "Ivanov"
+    },
+    {
+        "id":"jkj",
+        "title": "kur444",
+        "subtitle": "malykKur444",
+        "content": "moqMalykKur444",
+        "date": "15.03.2023",
+        "link": "http://www.google.com",
+		"imgLink": "assets/papers/pic/anxiety.jpg",
+        "author": "Rozalina", 
+        "lastName" : "Ivanov"
+    },
+    {
+        "id":"kjhkj",
+        "title": "kur444",
+        "subtitle": "malykKur444",
+        "content": "moqMalykKur444",
+        "date": "15.03.2023",
+        "link": "http://www.google.com",
+		"imgLink": "assets/papers/pic/anxiety.jpg",
+        "author": "Rozalina", 
+        "lastName" : "Ivanov"
+    }
+]

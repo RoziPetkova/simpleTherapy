@@ -343,6 +343,7 @@ section#contact {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid #e9e7e5;
+  object-fit: cover;
 }
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;

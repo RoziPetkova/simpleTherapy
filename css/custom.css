@@ -89,6 +89,14 @@ header.masthead .masthead-subheading {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(36, 30, 30, 0.30) 100%);
 }
 
+.containerFadeStatis {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0%;
+  background: linear-gradient(to bottom, rgb(255 255 255) 0%, rgb(255 255 255) 100%);
+}
+
 .navbar {
   --bs-navbar-active-color: #05353f;
 }
@@ -116,7 +124,7 @@ header.masthead .masthead-subheading {
 
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2vh;
+  font-size: 1.5vh;
   color: #042f28;
   letter-spacing: 0.09em;
   text-shadow: 1px 1px 10px #212529;
@@ -229,7 +237,7 @@ section#contact {
   --bs-btn-bg: #ffffff;
   --bs-btn-border-color: #ffffff;
   --bs-btn-hover-color: #275d54;
-  --bs-btn-hover-bg: #e9e7e5;
+  --bs-btn-hover-bg: #f8f9fa;
   --bs-btn-hover-border-color: #6c757d;
   --bs-btn-focus-shadow-rgb: 130, 138, 145;
   --bs-btn-active-color: #fff;
@@ -239,6 +247,11 @@ section#contact {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #6c757d;
   --bs-btn-disabled-border-color: #6c757d;
+  
+  padding: 1.25rem 2.5rem;
+  font-family: 'Raleway';
+  font-size:  2vh;
+  font-weight: 300 !important;
 }
 
 .btn-dark {
@@ -259,11 +272,11 @@ section#contact {
 }
 
 #portfolio .portfolio-item {
-  /* border: 1px solid #d5d5d5 !important; */
-  display: inline-flex
+  display: flex;
+  justify-content: center;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+/* #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
   width: 100%;
@@ -271,17 +284,93 @@ section#contact {
   background: var(--bs-link-hover-color);
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity ease-in-out 0.2s;
-}
+} */
 
 .img-fluid {
-  max-width: 100%;
-  height: 100%;
+  opacity: 0.8;
+  object-fit: cover;
+  width: 50vh;
+  height: 35vh;
+  object-position: 50% 100%;
+  box-shadow: 0px 11px 20px -5px rgba(0,0,0,.8);
 }
 
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
-  opacity: 0.3;
+.img-article-popup {
+  opacity: 0.8;
+  object-fit: cover;
+  height: 50vh;
+  object-position: 50% 50%;
+  box-shadow: 0px 11px 20px -5px rgba(0,0,0,.8);
+}
+
+#portfolio .portfolio-item .portfolio-link:hover .img-fluid{
+  opacity: 1;
+}
+
+.portfolio-modal .modal-content {
+  padding-top: 5rem;
+  padding-bottom: 0rem;
+  text-align: center;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 2rem;
+  opacity: 1;
+  float: left;
+}
+.portfolio-modal .modal-content img.author-img{
+  margin-bottom: 1rem;
+  opacity: 1;
+  float: left;
+  width: 12rem;
+  height: 12rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-modal .modal-content .author-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+/* .portfolio-modal .modal-content .author-col div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.portfolio-modal .modal-content .author-col .articleDate {
+  font-size: smaller;
+}
+
+.article-subheading  {
+  font-size: medium;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 4rem;
+}
+
+.articleTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #376a65ff
+}
+
+.portfolio-modal .modal-content h2{
+  font-size: xx-large;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.portfolio-modal .modal-content p {
+  margin-bottom: 2rem;
+  text-align: justify;
+  font-family: 'Lato';
+  color: #0d3c37;
 }
 
 #approach .approach-section:hover .fa-stack {
@@ -298,7 +387,7 @@ section#contact {
 #approach .approach-section:hover h4 {
   color: white;
   cursor: pointer;
-  text-shadow: 1px 1px 10px #212529;
+  text-shadow: 1px 1px 10px #bfc0c05e;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out
 }
 
@@ -320,11 +409,12 @@ section#contact {
 
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  font-size: x-large;
 }
 
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
@@ -343,6 +433,7 @@ section#contact {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid #e9e7e5;
+  object-fit: cover;
 }
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
