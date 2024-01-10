@@ -18,31 +18,37 @@ let sectionPairs = {
     // "survices" : "servicesInfo"
 };
 
+let contentFile = {};
+
 window.addEventListener('DOMContentLoaded', event => {
-    fetch('assets/papers/statii.json')
+    fetch('assets/papers/articles.json')
         .then((response) => response.json())
-        .then((json) => loadStatii(json));
+        .then((json) => {
+            if (event.srcElement.activeElement.id == 'page-top') {
+                loadArticles(json);
+            } else {
+               loadArticlesInBlogPade(json);
+            }
+        })
 
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
-
-    };
-
-    // Shrink the navbar 
-    navbarShrink();
+    const contentFile = fetch('assets/content.json');
+    const navbarCollapsible = document.body.querySelector('#mainNav');
+    const navbarResponsiveMenu = document.body.querySelector('#navbarResponsive')
 
     // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-    
+    document.addEventListener('scroll', function () {
+        if (!navbarCollapsible)
+            return;
+
+        window.scrollY === 0 ? navbarCollapsible.classList.remove('navbar-shrink') : navbarCollapsible.classList.add('navbar-shrink');
+    });
+
+    // Closes the mobile menu on scroll
+    document.addEventListener('scroll', function () {
+        if (window.scrollY > 400 && window.getComputedStyle(navbarResponsiveMenu).display !== 'none')
+            navbarToggler.click();
+    });
+
     //  Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
@@ -98,68 +104,61 @@ function showDiv() {
 $(window).scroll(function() {
     let gradient = `linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgb(36, 30, 30, ${$(window).scrollTop() / 750}) ${120 - $(window).scrollTop() / 7}%)`;
     $(".containerFade").css("background", gradient);
-
-    // $(window).scroll(function () { fade(false); }); //fade elements on scroll
 });
 
-
-// $(window).on("load", function () {
-//     function fade(pageLoad) {
-//         var windowTop = $(window).scrollTop(), windowBottom = windowTop + $(window).innerHeight();
-//         var min = 0.3, max = 0.7, threshold = 0.01;
-
-//         $(".fade").each(function () {
-//             /* Check the location of each desired element */
-//             var objectHeight = $(this).outerHeight(), objectTop = $(this).offset().top, objectBottom = $(this).offset().top + objectHeight;
-
-//             /* Fade element in/out based on its visible percentage */
-//             if (objectTop < windowTop) {
-//                 if (objectBottom > windowTop) { $(this).fadeTo(0, min + ((max - min) * ((objectBottom - windowTop) / objectHeight))); }
-//                 else if ($(this).css("opacity") >= min + threshold || pageLoad) { $(this).fadeTo(0, min); }
-//             } else if (objectBottom > windowBottom) {
-//                 if (objectTop < windowBottom) { $(this).fadeTo(0, min + ((max - min) * ((windowBottom - objectTop) / objectHeight))); }
-//                 else if ($(this).css("opacity") >= min + threshold || pageLoad) { $(this).fadeTo(0, min); }
-//             } else if ($(this).css("opacity") <= max - threshold || pageLoad) { $(this).fadeTo(0, max); }
-//         });
-//     } fade(true); //fade elements on page-load
-   
-// });
-
-
-function loadStatii(statii) {
-    const lastSixPapers = statii.slice(0, 6);
+function loadArticles(articles) {
+    const lastSixPapers = articles.slice(0, 6);
     for (let article of lastSixPapers) {
         $("#portfolio .container .row").append(getArticlesContainer(article.imgLink, article.title, article.subtitle, article.id));
-        $("#page-top").append(getPopupContainer(article.id, article.title, article.subtitle, article.imgLink, article.content, article.date, article.author));
+        $("#page-top").append(getPopupContainer(article.id, article.title, article.subtitle, article.imgLink, article.content, article.date, article.author, article.lastName));
     }
 };
 
-function getPopupContainer(id, title, subtitle, imgLink, content, date, author) {
-    return `<!-- Portfolio item 3 modal popup-->
+function loadArticlesInBlogPade(articles) {
+    const lastNinePapers = articles.slice(0, 9);
+    for (let article of lastNinePapers) {
+        $("#articles .container .row").append(getArticlesContainer(article.imgLink, article.title, article.subtitle, article.id));
+        $("#page-top-articles").append(getPopupContainer(article.id, article.title, article.subtitle, article.imgLink, article.content, article.date, article.author, article.lastName));
+    }
+};
+
+function getPopupContainer(id, title, subtitle, imgLink, content, date, author, lastName) {
+    return `<!-- Article item 3 modal popup-->
             <div class="portfolio-modal modal fade" id="${id}" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
+                    <img class="img-article-popup d-block" src="${imgLink}" alt="..." />
+                        <div class="close-modal" data-bs-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" />
+                        </div>
+                        <div class="container my-5">
+                            <div class="row justify-content-start">  
+                            <!-- Article details-->
+                                <h2 class="articleTitle text-uppercase">${title}</h2> 
+                                <h5 class="article-subheading text-muted">${subtitle}.</h5> 
+                                <div class="col-lg-9">
                                     <div class="modal-body">
-                                        <!-- Project details-->
-                                        <h2 class="text-uppercase">${title}</h2> 
-                                        <p class="item-intro text-muted">${subtitle}.</p> 
-                                        <img class="img-fluid d-block mx-auto" src="${imgLink}" alt="..." />
-                                        <p>"${content}"</p>
-                                        <ul class="list-inline">
-                                            <li> <strong>Date:</strong>${date}</li>
-                                            <li> <strong>Author:</strong>${author}</li>
-                                        </ul>
-                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                            <i class="fas fa-xmark me-1"></i>
-                                            Close Project
-                                        </button>
+                                        <p class="third-text">${content}</p>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="author-col col-lg-3 modal-body">
+                                    <div class="author-col"> 
+                                        <img class="author-img mx-auto rounded-circle my-2" src="assets/img/team/${author}.jpg"</img>
+                                        <p class="third-text my-2">${author} ${lastName}</p>
+                                        <p class="third-text articleDate">${date}</p>
+                                            <div>
+                                                <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2642227&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                                                <a class="btn btn-dark btn-social mx-2" href="counseling.simpletherapy@gmail.com" aria-label="Send an email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                            </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container" style="margin-top: 4rem; margin-bottom: 7rem ">
+                                <button class="btn btn-secondary btn-xl center text-uppercase" data-bs-dismiss="modal" type="button">
+                                    Close
+                                </button>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -168,11 +167,12 @@ function getPopupContainer(id, title, subtitle, imgLink, content, date, author) 
 
 function getArticlesContainer(imgLink, statiqTitle, statiqSubtitle, id) {
     return ` <!-- Common Portfolio items will be generated here -->
-            <div class="col-lg-3 col-sm-2 mb-4"> 
+            <div class="col-lg-4 col-sm-2 mb-5"> 
                 <div class="portfolio-item"> 
                     <a class="portfolio-link" data-bs-toggle="modal" href="#${id}">
-                        <div class="portfolio-hover"></div>
+                    <!--<div class="portfolio-hover"></div> -->
                         <img class="img-fluid" src="${imgLink}" alt="...">
+                        <div class="containerFadeStatis"></div>
                         <div class="portfolio-caption">
                             <p class="portfolio-caption-heading">${statiqTitle}</p>
                             <p class="portfolio-caption-subheading text-muted">${statiqSubtitle}</p>

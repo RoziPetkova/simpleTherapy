@@ -19,9 +19,9 @@ let sectionPairs = {
 };
 
 window.addEventListener('DOMContentLoaded', event => {
-    fetch('assets/papers/statii.json')
+    fetch('assets/papers/articles.json')
         .then((response) => response.json())
-        .then((json) => loadStatii(json));
+        .then((json) => loadArticles(json));
 
     // Navbar shrink function
     var navbarShrink = function () {
@@ -126,8 +126,8 @@ $(window).scroll(function() {
 // });
 
 
-function loadStatii(statii) {
-    const lastSixPapers = statii.slice(0, 6);
+function loadArticles(articles) {
+    const lastSixPapers = articles.slice(0, 6);
     for (let article of lastSixPapers) {
         $("#portfolio .container .row").append(getArticlesContainer(article.imgLink, article.title, article.subtitle, article.id));
         $("#page-top").append(getPopupContainer(article.id, article.title, article.subtitle, article.imgLink, article.content, article.date, article.author));
