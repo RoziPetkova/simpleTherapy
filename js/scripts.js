@@ -15,12 +15,25 @@ let sectionPairs = {
     "session" : "sessionInfo",
     // "conditions" : "issuesInfo",
     // "targerGroup" : "targetgroupInfo",
-    // "survices" : "servicesInfo"
+    // "services" : "servicesInfo"
 };
 
 let contentFile = {};
+let i18n = $.i18n()
+
+function translate(locale) {
+    i18n.locale = locale
+    $('body').i18n();
+
+    return locale === 'bg' ? 'en' : 'bg';
+}
 
 window.addEventListener('DOMContentLoaded', event => {
+    fetch("assets/lang/en.yaml")
+        .then(response => response.text())
+        .then(yamlText => jsyaml.load(yamlText))
+        .then(jsonData => i18n.load(jsonData));
+
     fetch('assets/papers/articles.json')
         .then((response) => response.json())
         .then((json) => {
@@ -29,11 +42,11 @@ window.addEventListener('DOMContentLoaded', event => {
             } else {
                loadArticlesInBlogPade(json);
             }
-        })
+        });
 
-    const contentFile = fetch('assets/content.json');
-    const navbarCollapsible = document.body.querySelector('#mainNav');
-    const navbarResponsiveMenu = document.body.querySelector('#navbarResponsive')
+    contentFile = fetch('assets/content.json');
+    var navbarCollapsible = document.body.querySelector('#mainNav');
+    var navbarResponsiveMenu = document.body.querySelector('#navbarResponsive')
 
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', function () {
@@ -45,7 +58,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Closes the mobile menu on scroll
     document.addEventListener('scroll', function () {
-        if (window.scrollY > 400 && window.getComputedStyle(navbarResponsiveMenu).display !== 'none')
+        if (window.scrollY > 400 && window.getComputedStyle(navbarToggler).display !== 'none' && window.getComputedStyle(navbarResponsiveMenu).display !== 'none')
             navbarToggler.click();
     });
 
@@ -69,6 +82,16 @@ window.addEventListener('DOMContentLoaded', event => {
                 navbarToggler.click();
             }
         });
+    });
+});
+
+$(document).ready(function () {
+    $("#languageSelectorButton").click(function() {
+        var oldLocale = $(this).attr("select-locale");
+        var newLocale = translate($(this).attr("select-locale"));
+        $(this).attr("select-locale", newLocale);
+        $(this).find("svg[locale='" + newLocale + "']").show();
+        $(this).find("svg[locale='" + oldLocale + "']").hide();
     });
 });
 

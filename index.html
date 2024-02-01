@@ -11,7 +11,11 @@
 
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.9/jquery.i18n.min.js" integrity="sha512-EkS8Kq86l7dHt/dOBniHgtYvAScDqFw/lIPX5VCwaVKsufs0pY44I2cguqZ45QaFOGGwVd3T1nXvVJYIEjRsjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.9/jquery.i18n.messagestore.min.js" integrity="sha512-Ejnbo8F6SIU18Tj9hZyJzVbhWtbC40Fyvuyfs6InZloy043xEvICul37BxuUGZG1ia8RQky7uBOwBdLsGKDu1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
 
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
@@ -41,6 +45,24 @@
                     <!-- <li class="nav-item"><a class="nav-link" href="#about">About</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <div class="nav-link" style="--bs-btn-padding-x:0" type="button" id="languageSelectorButton" select-locale="bg">
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" locale="bg" viewBox="0 0 512 512">
+                                <g fill-rule="evenodd" stroke-width="1pt">
+                                    <path fill="#d62612" d="M0 341.3h512V512H0z" />
+                                    <path fill="#fff" d="M0 0h512v170.7H0z" />
+                                    <path fill="#00966e" d="M0 170.7h512v170.6H0z" />
+                                </g>
+                            </svg>
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" locale="en" style="display:none" viewBox="0 0 512 512">
+                                <path fill="#012169" d="M0 0h512v512H0z"/>
+                                <path fill="#FFF" d="M512 0v64L322 256l190 187v69h-67L254 324 68 512H0v-68l186-187L0 74V0h62l192 188L440 0z"/>
+                                <path fill="#C8102E" d="m184 324 11 34L42 512H0v-3zm124-12 54 8 150 147v45zM512 0 320 196l-4-44L466 0zM0 1l193 189-59-8L0 49z"/>
+                                <path fill="#FFF" d="M176 0v512h160V0zM0 176v160h512V176z"/>
+                                <path fill="#C8102E" d="M0 208v96h512v-96zM208 0v512h96V0z"/>
+                              </svg>
+                            </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -48,8 +70,8 @@
     <!-- Masthead-->
     <header class="masthead">
         <div class="container">
-            <div class="masthead-subheading">Welcome to Simple Therapy!</div>
-            <div class="masthead-heading text-uppercase">A Safe Space to Be Yourself</div>
+            <div class="masthead-subheading" data-i18n="welcome">Welcome to Simple Therapy!</div>
+            <div class="masthead-heading text-uppercase" data-i18n="welcome-subheading">A Safe Space to Be Yourself</div>
             <a class="btn btn-header btn-xl text-uppercase" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf?pId=1051962">Schedule an Appointment</a>
         </div>
         <div class="containerFade"></div>
@@ -58,35 +80,35 @@
     <section class="page-section bg-light logo-bg" id="overview">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Who are we?</h2>
-                <h3 class="section-subheading text-muted">Find out more about us</h3>
+                <h2 data-i18n="who1" class="section-heading text-uppercase">Who are we?</h2>
+                <h3 data-i18n="who2" class="section-subheading text-muted">Find out more about us</h3>
             </div>
-            <p class="main-text" style="margin-bottom:6rem">
+            <p data-i18n="[html]who3" class="main-text" style="margin-bottom:6rem">
                 <em>Simple Therapy</em> is a place of healing, growth, and transformation. We understand that seeking therapy takes courage, and we're here to support you on your journey towards wellness. Our dedicated team of therapists is committed to providing a safe and nurturing space where you can explore your thoughts, feelings, and experiences. Whether you're struggling with <em>anxiety</em>, <em>depression</em>, <em>trauma</em>, or just seeking support in a difficult situation, we're here to help you navigate life's challenges and achieve positive change.
             </p>
             <div class="row text-center">
-                <ul class="services-list list-unstyled" style="margin-bottom: 2rem;">
+                <ul data-i18n="[html]who4" class="services-list list-unstyled" style="margin-bottom: 2rem;">
                     <li>
                         <a>
                             <input type="radio" name="divToggleOverview" id="radio-1" data-divid="genInformationInfo" />
-                            <label for="radio-1" class="btn-grid-lable text-center">What is psychotherapy?</label>
+                            <label data-i18n="[html]who5" for="radio-1" class="btn-grid-lable text-center">What is psychotherapy?</label>
                         </a>
                     </li>
                     <li>
                         <a>
                             <input type="radio" name="divToggleOverview" id="radio-2" data-divid="AreasOfExpInfo" checked />
-                            <label for="radio-2" class="btn-grid-lable text-center">Areas of experience</label>
+                            <label data-i18n="areas-of-experience-label" for="radio-2" class="btn-grid-lable text-center">Areas of experience</label>
                         </a>
                     </li>
                     <li>
                         <a>
                             <input type="radio" name="divToggleOverview" id="radio-3" data-divid="servicesInfo" />
-                            <label for="radio-3" class="btn-grid-lable text-center">Our Services</label>
+                            <label data-i18n="our-services-label" for="radio-3" class="btn-grid-lable text-center">Our Services</label>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="fadeIn hidden" id="genInformationInfo">
+            <div data-i18n="[html]who5" class="fadeIn hidden" id="genInformationInfo">
                 <p class="third-text">
                     <strong>What is therapy?</strong>
                     <br>
@@ -102,8 +124,8 @@
                 </p>
             </div>
             <div class="fadeIn" id="AreasOfExpInfo">
-                <p class="third-text">We specialize in providing compassionate and effective support in a wide range of areas, including:</p>
-                <ul class="third-text">
+                <p data-i18n="[html]who6" class="third-text">We specialize in providing compassionate and effective support in a wide range of areas, including:</p>
+                <ul data-i18n="[html]who7" class="third-text">
                     <li><strong>Depression:</strong> Our goal is to target the symptoms of depression, which may manifest as
                         persistent sadness, lack of motivation, changes in appetite, or sleep problems.</li>
                     <br>
@@ -133,9 +155,9 @@
                 </ul>
             </div>
             <div class="row my-5 fadeIn hidden" id="servicesInfo">
-                <h5 class="third-text">Individual clients</h5>
+                <h5 data-i18n="[html]who8" class="third-text">Individual clients</h5>
                 <div>
-                    <ul class="list-unstyled third-text">
+                    <ul data-i18n="[html]who9" class="list-unstyled third-text">
                         <!-- <a href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking/staff?offerItems=sv%3A15050072&pId=1051962">Initial introductory meeting - 45lv.</a> -->
                         <li>Initial introductory meeting - 45lv.</li>
                         <li>Online individual therapeutic session - 65lv.</li>
@@ -145,8 +167,8 @@
                         <li>Free breastfeeding consultation</li>
                     </ul>
                 </div>
-                <h5 class="third-text">Corporate clients</h5>
-                <p class="third-text">
+                <h5 data-i18n="[html]who10" class="third-text">Corporate clients</h5>
+                <p data-i18n="[html]who11" class="third-text">
                     We understand that each organization is unique. That's why we work closely with you to develop tailored solutions that align with your company's goals and values. Whether it's promoting work-life balance, reducing workplace stress, or enhancing overall well-being, we've got you covered.
                     Invest in your employees' mental health, and you'll see the positive impact on your company's performance and culture.
                     <br>Contact us today to learn more about our corporate services and how we can support your organization's success.
@@ -161,9 +183,9 @@
     <section class="page-section" id="approach">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Our Approach</h2>
+                <h2 data-i18n="[html]our-approach.1" class="section-heading text-uppercase">Our Approach</h2>
                 <hr style="width:50%;text-align:left;margin-left:0">
-                <h3 class="section-subheading text-muted">Find out more about our job</h3>
+                <h3 data-i18n="[html]our-approach.2" class="section-subheading text-muted">Find out more about our job</h3>
             </div>
             <div class="row text-center">
                 <div id="paradigm" class="approach-section col-md-4" ONCLICK="ShowAdditionalSection('paradigmInfo')" href="">
@@ -171,28 +193,28 @@
                         <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fas fa-book-open fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="my-3">The approach</h4>
-                    <p class="text-muted second-text">What is a therapeutic approach and what approaches are we using?</p>
+                    <h4 data-i18n="[html]our-approach.3" class="my-3">The approach</h4>
+                    <p data-i18n="[html]our-approach.4" class="text-muted second-text">What is a therapeutic approach and what approaches are we using?</p>
                 </div>
                 <div id="process" class="approach-section col-md-4" ONCLICK="ShowAdditionalSection('processInfo')" href="">
                     <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fas fa-chart-simple fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="my-3">The process</h4>
-                    <p class="text-muted second-text">How long is the therapeutic process and what does it consist of?</p>
+                    <h4 data-i18n="[html]our-approach.5" class="my-3">The process</h4>
+                    <p data-i18n="[html]our-approach.6" class="text-muted second-text">How long is the therapeutic process and what does it consist of?</p>
                 </div>
                 <div id="session" class="approach-section col-md-4" ONCLICK="ShowAdditionalSection('sessionInfo')" href="">
                     <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fas fa-clipboard fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="my-3">The session</h4>
-                    <p class="text-muted second-text">How does a session looks like and what should you expect it to be?</p>
+                    <h4 data-i18n="[html]our-approach.7" class="my-3">The session</h4>
+                    <p data-i18n="[html]our-approach.8" class="text-muted second-text">How does a session looks like and what should you expect it to be?</p>
                 </div>
             </div>
             <hr style="width:50%;text-align:right;margin-right:0">
-            <div class="fadeIn third-text" id="paradigmInfo" STYLE="display:none">At Simple Therapy, we employ a diverse range of therapeutic paradigms to cater to the unique needs of each client. Our approach combines elements from cognitive-behavioral therapy and positive psychotherapy transactional analysis and utilizes projective techniques, ensuring a tailored and individualized approach for every client. This holistic approach allows us to address a wide spectrum of mental health needs, providing comprehensive and personalized care.
+            <div data-i18n="[html]our-approach.9" class="fadeIn third-text" id="paradigmInfo" STYLE="display:none">At Simple Therapy, we employ a diverse range of therapeutic paradigms to cater to the unique needs of each client. Our approach combines elements from cognitive-behavioral therapy and positive psychotherapy transactional analysis and utilizes projective techniques, ensuring a tailored and individualized approach for every client. This holistic approach allows us to address a wide spectrum of mental health needs, providing comprehensive and personalized care.
                 <br><br><strong>Cognitive-behavioral therapy (CBT)</strong> is thought to be a structured and short-term method that helps clients to become aware of their negative ways of thinking and unhealthy behavioral patterns. CBT is an effective tool and can be used alone or in combination with other therapeutic instruments. It is widely used in treating Anxiety and Depression, eating disorders, PTSD and others. However, CBT is not used only for work with mental health conditions. It can be a resourceful technique for anyone who wants to learn how to deal with everyday stressful situations, anger management or want to be prepared for challenging situations, to view them more clearly and respond to them in a more effective way.
                 <br><br><strong>Positive psychotherapy</strong> is a conflict-centered, integrated, short-term method, created by Nossrat Peseschkian in 1977.
                 The term "positive" originates from Latin, signifying the actual and real aspects. <br>This therapy approach is guided by several key principles.
@@ -200,7 +222,7 @@
                 The "Principle of Balance" recognizes universal coping patterns, despite cultural differences. It identifies four life areas - body/health, achievement/work, contact/relationships, and future/purpose/meaning of life - as influential in conflict resolution. However, overemphasizing one area can overshadow the others.
                 Lastly, the "Principle of Consultation" outlines a five-stage process for therapy and self-help. It starts with observation and progresses through taking inventory, situational encouragement, verbalization, and expanding goals. This approach empowers patients to resolve issues and set future-oriented life goals by recognizing their strengths and resources. Positive Psychotherapy is a transformative approach that focuses on personal growth and change.
             </div>
-            <div class="fadeIn third-text" id="processInfo" STYLE="display:none">
+            <div data-i18n="[html]our-approach.10" class="fadeIn third-text" id="processInfo" STYLE="display:none">
                 The therapeutic journey unfolds through several key sessions.
                 <br><br><strong>Initial Session:</strong> This session has multiple purposes. It's primarily dedicated to gathering essential information and establishing the foundation for the shared collaborative work. During this phase, the client's needs, expectations, goals, and motivation for therapy are explored. Additionally, it serves as an opportunity for the therapist and client to become acquainted and determine whether an effective and productive partnership can be established.
                 <br>Towards the end of the initial session, the therapist provides a summary, outlining a probable work plan. However, it's essential to recognize that the therapeutic process is dynamic and adaptable. The initial plan we create functions as a flexible guide, open to adjustments throughout the ongoing therapeutic journey. Both the therapist and the client should feel comfortable discussing and modifying this plan as necessary to ensure it remains aligned with your evolving needs and goals.
@@ -209,7 +231,7 @@
                 <br>As we approach the culmination of our therapeutic work, we gradually reduce the frequency of our sessions. Discussions about closure and any remaining topics you'd like to address are initiated during our final sessions. The conclusion of therapy is a collaborative process, facilitating a smooth transition while respecting your needs and goals.
 
             </div>
-            <div class="fadeIn third-text" id="sessionInfo" st="display:none">
+            <div data-i18n="[html]our-approach.11" class="fadeIn third-text" id="sessionInfo" st="display:none">
                 It's important to emphasize that each therapy session is unique, with no strict guidelines. The sessions are tailored to meet the individual requirements and needs of the client. Nevertheless, if we were to delineate a structured framework, it would resemble the following:
                 <br><br><strong>Commencement:</strong> Every session begins with a brief five-minute summary of the client's current emotional state, allowing them to introspect and engage with their feelings.
                 <br><br><strong>Session Focus:</strong> The session's topic can either align with the initial plan or may address a current issue of higher importance. If the client wishes to discuss an ongoing significant event, this is typically shared at the session's outset. If there are more than one topic for the session, the therapist and the client collaboratively select the session's primary focus.
@@ -306,9 +328,9 @@
     <section class="page-section" id="team">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Meet Our Team</h2>
-                <h3 class="section-subheading text-muted">Who are our team members</h3>
-                <p class="main-text" style="margin-bottom:6rem">
+                <h2 data-i18n="[html]team.1" class="section-heading text-uppercase">Meet Our Team</h2>
+                <h3 data-i18n="[html]team.2" class="section-subheading text-muted">Who are our team members</h3>
+                <p data-i18n="[html]team.3" class="main-text" style="margin-bottom:6rem">
                     Our team consists of therapists, researchers and practitioners with multiple years of experience
                     dedicated to provide the best service in order for our client’s to achieve emotional and mental
                     well-being.</p>
@@ -318,30 +340,30 @@
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember1">
                             <img class="mx-auto rounded-circle" src="assets/img/team/Radost.jpg" alt="Biography of Radost Ovagimyan" />
-                            <h4 id="nameTM" class="my-3">Radost Ovagimyan</h4>
-                            <p class="text-muted">Clinical psychologist<br>Psychotherapist</p>
+                            <h4 data-i18n="[html]team.4" id="nameTM" class="my-3">Radost Ovagimyan</h4>
+                            <p data-i18n="[html]team.5" class="text-muted">Clinical psychologist<br>Psychotherapist</p>
                         </div>
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2642227&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="counseling.simpletherapy@gmail.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a data-i18n="book" class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2642227&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        <a data-i18n="book" class="btn btn-dark btn-social mx-2" href="counseling.simpletherapy@gmail.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember2">
                             <img class="mx-auto rounded-circle" src="assets/img/team/Rozalina.jpg" alt="Biography of Rozalina Petkova" />
-                            <h4 id="nameTM" class="my-3">Rozalina Petkova</h4>
-                            <p class="text-muted">Psychologist and Psychotherapist <br> Cognitive Science Researcher</p>
+                            <h4 data-i18n="[html]team.6" id="nameTM" class="my-3">Rozalina Petkova</h4>
+                            <p data-i18n="[html]team.7" class="text-muted">Psychologist and Psychotherapist <br> Cognitive Science Researcher</p>
                         </div>
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2665271&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="mailto:roz.petkova@yahoo.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a data-i18n="book" class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2665271&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        <a data-i18n="book" class="btn btn-dark btn-social mx-2" href="mailto:roz.petkova@yahoo.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember3">
                             <img class="mx-auto rounded-circle" src="assets/img/team/Ralitsa.jpg" alt="Biography of Ralitsa Penkova" />
-                            <h4 id="nameTM" class="my-3">Ralitsa Penkova</h4>
-                            <p class="text-muted">Clinical psychologist<br>Psychotherapist</p>
+                            <h4 data-i18n="[html]team.8" id="nameTM" class="my-3">Ralitsa Penkova</h4>
+                            <p data-i18n="[html]team.9" class="text-muted">Clinical psychologist<br>Psychotherapist</p>
                         </div>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2642227&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="counseling.simpletherapy@gmail.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -351,8 +373,8 @@
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember4">
                             <img class="mx-auto rounded-circle" src="assets/img/team/Atanas.jpg" alt="Biography of Atanas Atansov" />
-                            <h4 id="nameTM" class="my-3">Atanas Atanasov</h4>
-                            <p class="text-muted">Psychologist <br> Cognitive Science Researcher</p>
+                            <h4 data-i18n="[html]team.10" id="nameTM" class="my-3">Atanas Atanasov</h4>
+                            <p data-i18n="[html]team.11" class="text-muted">Psychologist <br> Cognitive Science Researcher</p>
                         </div>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2665286&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="counseling.simpletherapy@gmail.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
