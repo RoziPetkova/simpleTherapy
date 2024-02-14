@@ -39,12 +39,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#overview">Who are we</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#approach">Our approach</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#overview" data-i18n="mainNav-who-are-we">Who are we</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#approach" data-i18n="mainNav-our-approach">Our approach</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Articles</a></li> -->
                     <!-- <li class="nav-item"><a class="nav-link" href="#about">About</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team" data-i18n="mainNav-team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="mainNav-contact">Contact</a></li>
                     <li class="nav-item">
                         <div class="nav-link" style="--bs-btn-padding-x:0" type="button" id="languageSelectorButton" select-locale="bg">
                             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" locale="bg" viewBox="0 0 512 512">
@@ -72,43 +72,43 @@
         <div class="container">
             <div class="masthead-subheading" data-i18n="welcome">Welcome to Simple Therapy!</div>
             <div class="masthead-heading text-uppercase" data-i18n="welcome-subheading">A Safe Space to Be Yourself</div>
-            <a class="btn btn-header btn-xl text-uppercase" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf?pId=1051962">Schedule an Appointment</a>
+            <a class="btn btn-header btn-xl text-uppercase"  data-i18n="header-button" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf?pId=1051962">Schedule an Appointment</a>
         </div>
         <div class="containerFade"></div>
     </header>
-    <!--Who are we -->
+    <!--Who are we - overview -->
     <section class="page-section bg-light logo-bg" id="overview">
         <div class="container">
             <div class="text-center">
-                <h2 data-i18n="who1" class="section-heading text-uppercase">Who are we?</h2>
-                <h3 data-i18n="who2" class="section-subheading text-muted">Find out more about us</h3>
+                <h2 data-i18n="overview-title" class="section-heading text-uppercase">Who are we?</h2>
+                <h3 data-i18n="overview-subtitle" class="section-subheading text-muted">Find out more about us</h3>
             </div>
-            <p data-i18n="[html]who3" class="main-text" style="margin-bottom:6rem">
+            <p data-i18n="[html]overview-main" class="main-text" style="margin-bottom:6rem">
                 <em>Simple Therapy</em> is a place of healing, growth, and transformation. We understand that seeking therapy takes courage, and we're here to support you on your journey towards wellness. Our dedicated team of therapists is committed to providing a safe and nurturing space where you can explore your thoughts, feelings, and experiences. Whether you're struggling with <em>anxiety</em>, <em>depression</em>, <em>trauma</em>, or just seeking support in a difficult situation, we're here to help you navigate life's challenges and achieve positive change.
             </p>
             <div class="row text-center">
-                <ul data-i18n="[html]who4" class="services-list list-unstyled" style="margin-bottom: 2rem;">
+                <ul" class="services-list list-unstyled" style="margin-bottom: 2rem;">
                     <li>
                         <a>
                             <input type="radio" name="divToggleOverview" id="radio-1" data-divid="genInformationInfo" />
-                            <label data-i18n="[html]who5" for="radio-1" class="btn-grid-lable text-center">What is psychotherapy?</label>
+                            <label data-i18n="[html]overview-section-title1" for="radio-1" class="btn-grid-lable text-center">What is psychotherapy?</label>
                         </a>
                     </li>
                     <li>
                         <a>
                             <input type="radio" name="divToggleOverview" id="radio-2" data-divid="AreasOfExpInfo" checked />
-                            <label data-i18n="areas-of-experience-label" for="radio-2" class="btn-grid-lable text-center">Areas of experience</label>
+                            <label data-i18n="overview-section-title2" for="radio-2" class="btn-grid-lable text-center">Areas of experience</label>
                         </a>
                     </li>
                     <li>
                         <a>
                             <input type="radio" name="divToggleOverview" id="radio-3" data-divid="servicesInfo" />
-                            <label data-i18n="our-services-label" for="radio-3" class="btn-grid-lable text-center">Our Services</label>
+                            <label data-i18n="overview-section-title3" for="radio-3" class="btn-grid-lable text-center">Our Services</label>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div data-i18n="[html]who5" class="fadeIn hidden" id="genInformationInfo">
+            <div data-i18n="[html]overview-cont1" class="fadeIn hidden" id="genInformationInfo">
                 <p class="third-text">
                     <strong>What is therapy?</strong>
                     <br>
@@ -124,8 +124,8 @@
                 </p>
             </div>
             <div class="fadeIn" id="AreasOfExpInfo">
-                <p data-i18n="[html]who6" class="third-text">We specialize in providing compassionate and effective support in a wide range of areas, including:</p>
-                <ul data-i18n="[html]who7" class="third-text">
+                <p data-i18n="overview-cont2A" class="third-text">We specialize in providing compassionate and effective support in a wide range of areas, including:</p>
+                <ul data-i18n="[html]overview-cont2B" class="third-text">
                     <li><strong>Depression:</strong> Our goal is to target the symptoms of depression, which may manifest as
                         persistent sadness, lack of motivation, changes in appetite, or sleep problems.</li>
                     <br>
@@ -155,9 +155,9 @@
                 </ul>
             </div>
             <div class="row my-5 fadeIn hidden" id="servicesInfo">
-                <h5 data-i18n="[html]who8" class="third-text">Individual clients</h5>
+                <h5 data-i18n="overview-cont3-individual" class="third-text">Individual clients</h5>
                 <div>
-                    <ul data-i18n="[html]who9" class="list-unstyled third-text">
+                    <ul data-i18n="[html]overview-cont3-individual-1" class="list-unstyled third-text">
                         <!-- <a href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking/staff?offerItems=sv%3A15050072&pId=1051962">Initial introductory meeting - 45lv.</a> -->
                         <li>Initial introductory meeting - 45lv.</li>
                         <li>Online individual therapeutic session - 65lv.</li>
@@ -167,8 +167,8 @@
                         <li>Free breastfeeding consultation</li>
                     </ul>
                 </div>
-                <h5 data-i18n="[html]who10" class="third-text">Corporate clients</h5>
-                <p data-i18n="[html]who11" class="third-text">
+                <h5 data-i18n="overview-cont3-corp" class="third-text">Corporate clients</h5>
+                <p data-i18n="[html]overview-cont3-corp-1" class="third-text">
                     We understand that each organization is unique. That's why we work closely with you to develop tailored solutions that align with your company's goals and values. Whether it's promoting work-life balance, reducing workplace stress, or enhancing overall well-being, we've got you covered.
                     Invest in your employees' mental health, and you'll see the positive impact on your company's performance and culture.
                     <br>Contact us today to learn more about our corporate services and how we can support your organization's success.
@@ -183,9 +183,9 @@
     <section class="page-section" id="approach">
         <div class="container">
             <div class="text-center">
-                <h2 data-i18n="[html]our-approach.1" class="section-heading text-uppercase">Our Approach</h2>
+                <h2 data-i18n="our-approach-title" class="section-heading text-uppercase">Our Approach</h2>
                 <hr style="width:50%;text-align:left;margin-left:0">
-                <h3 data-i18n="[html]our-approach.2" class="section-subheading text-muted">Find out more about our job</h3>
+                <h3 data-i18n="our-approach-subtitle" class="section-subheading text-muted">Find out more about our job</h3>
             </div>
             <div class="row text-center">
                 <div id="paradigm" class="approach-section col-md-4" ONCLICK="ShowAdditionalSection('paradigmInfo')" href="">
@@ -193,28 +193,28 @@
                         <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fas fa-book-open fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 data-i18n="[html]our-approach.3" class="my-3">The approach</h4>
-                    <p data-i18n="[html]our-approach.4" class="text-muted second-text">What is a therapeutic approach and what approaches are we using?</p>
+                    <h4 data-i18n="our-approach-subsec1-t" class="my-3">The approach</h4>
+                    <p data-i18n="our-approach-subsec1-st" class="text-muted second-text">What is a therapeutic approach and what approaches are we using?</p>
                 </div>
                 <div id="process" class="approach-section col-md-4" ONCLICK="ShowAdditionalSection('processInfo')" href="">
                     <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fas fa-chart-simple fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 data-i18n="[html]our-approach.5" class="my-3">The process</h4>
-                    <p data-i18n="[html]our-approach.6" class="text-muted second-text">How long is the therapeutic process and what does it consist of?</p>
+                    <h4 data-i18n="our-approach-subsec2-t" class="my-3">The process</h4>
+                    <p data-i18n="our-approach-subsec2-st" class="text-muted second-text">How long is the therapeutic process and what does it consist of?</p>
                 </div>
                 <div id="session" class="approach-section col-md-4" ONCLICK="ShowAdditionalSection('sessionInfo')" href="">
                     <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fas fa-clipboard fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 data-i18n="[html]our-approach.7" class="my-3">The session</h4>
-                    <p data-i18n="[html]our-approach.8" class="text-muted second-text">How does a session looks like and what should you expect it to be?</p>
+                    <h4 data-i18n="our-approach-subsec3-t" class="my-3">The session</h4>
+                    <p data-i18n="our-approach-subsec3-st" class="text-muted second-text">How does a session looks like and what should you expect it to be?</p>
                 </div>
             </div>
             <hr style="width:50%;text-align:right;margin-right:0">
-            <div data-i18n="[html]our-approach.9" class="fadeIn third-text" id="paradigmInfo" STYLE="display:none">At Simple Therapy, we employ a diverse range of therapeutic paradigms to cater to the unique needs of each client. Our approach combines elements from cognitive-behavioral therapy and positive psychotherapy transactional analysis and utilizes projective techniques, ensuring a tailored and individualized approach for every client. This holistic approach allows us to address a wide spectrum of mental health needs, providing comprehensive and personalized care.
+            <div data-i18n="[html]our-approach-cont1" class="fadeIn third-text" id="paradigmInfo" STYLE="display:none">At Simple Therapy, we employ a diverse range of therapeutic paradigms to cater to the unique needs of each client. Our approach combines elements from cognitive-behavioral therapy and positive psychotherapy transactional analysis and utilizes projective techniques, ensuring a tailored and individualized approach for every client. This holistic approach allows us to address a wide spectrum of mental health needs, providing comprehensive and personalized care.
                 <br><br><strong>Cognitive-behavioral therapy (CBT)</strong> is thought to be a structured and short-term method that helps clients to become aware of their negative ways of thinking and unhealthy behavioral patterns. CBT is an effective tool and can be used alone or in combination with other therapeutic instruments. It is widely used in treating Anxiety and Depression, eating disorders, PTSD and others. However, CBT is not used only for work with mental health conditions. It can be a resourceful technique for anyone who wants to learn how to deal with everyday stressful situations, anger management or want to be prepared for challenging situations, to view them more clearly and respond to them in a more effective way.
                 <br><br><strong>Positive psychotherapy</strong> is a conflict-centered, integrated, short-term method, created by Nossrat Peseschkian in 1977.
                 The term "positive" originates from Latin, signifying the actual and real aspects. <br>This therapy approach is guided by several key principles.
@@ -222,7 +222,7 @@
                 The "Principle of Balance" recognizes universal coping patterns, despite cultural differences. It identifies four life areas - body/health, achievement/work, contact/relationships, and future/purpose/meaning of life - as influential in conflict resolution. However, overemphasizing one area can overshadow the others.
                 Lastly, the "Principle of Consultation" outlines a five-stage process for therapy and self-help. It starts with observation and progresses through taking inventory, situational encouragement, verbalization, and expanding goals. This approach empowers patients to resolve issues and set future-oriented life goals by recognizing their strengths and resources. Positive Psychotherapy is a transformative approach that focuses on personal growth and change.
             </div>
-            <div data-i18n="[html]our-approach.10" class="fadeIn third-text" id="processInfo" STYLE="display:none">
+            <div data-i18n="[html]our-approach-cont2" class="fadeIn third-text" id="processInfo" STYLE="display:none">
                 The therapeutic journey unfolds through several key sessions.
                 <br><br><strong>Initial Session:</strong> This session has multiple purposes. It's primarily dedicated to gathering essential information and establishing the foundation for the shared collaborative work. During this phase, the client's needs, expectations, goals, and motivation for therapy are explored. Additionally, it serves as an opportunity for the therapist and client to become acquainted and determine whether an effective and productive partnership can be established.
                 <br>Towards the end of the initial session, the therapist provides a summary, outlining a probable work plan. However, it's essential to recognize that the therapeutic process is dynamic and adaptable. The initial plan we create functions as a flexible guide, open to adjustments throughout the ongoing therapeutic journey. Both the therapist and the client should feel comfortable discussing and modifying this plan as necessary to ensure it remains aligned with your evolving needs and goals.
@@ -231,7 +231,7 @@
                 <br>As we approach the culmination of our therapeutic work, we gradually reduce the frequency of our sessions. Discussions about closure and any remaining topics you'd like to address are initiated during our final sessions. The conclusion of therapy is a collaborative process, facilitating a smooth transition while respecting your needs and goals.
 
             </div>
-            <div data-i18n="[html]our-approach.11" class="fadeIn third-text" id="sessionInfo" st="display:none">
+            <div data-i18n="[html]our-approach-cont3" class="fadeIn third-text" id="sessionInfo" st="display:none">
                 It's important to emphasize that each therapy session is unique, with no strict guidelines. The sessions are tailored to meet the individual requirements and needs of the client. Nevertheless, if we were to delineate a structured framework, it would resemble the following:
                 <br><br><strong>Commencement:</strong> Every session begins with a brief five-minute summary of the client's current emotional state, allowing them to introspect and engage with their feelings.
                 <br><br><strong>Session Focus:</strong> The session's topic can either align with the initial plan or may address a current issue of higher importance. If the client wishes to discuss an ongoing significant event, this is typically shared at the session's outset. If there are more than one topic for the session, the therapist and the client collaboratively select the session's primary focus.
@@ -243,14 +243,14 @@
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Articles</h2>
-                <h3 class="section-subheading text-muted">Something to read...</h3>
+                <h2 data-i18n="articles-title" class="section-heading text-uppercase">Articles</h2>
+                <h3 data-i18n="articles-subtitle" class="section-subheading text-muted">Something to read...</h3>
             </div>
             <div class="row">
                 <!-- Common Portfolio items will be generated here -->
             </div>
             <div class="container" style="margin-top: 4rem; margin-bottom: 7rem ">
-                <a class="btn btn-secondary btn-xl center text-uppercase" href="../simpleTherapy/papers.html#articles">Read more . . .</a>
+                <a class="btn btn-secondary btn-xl center text-uppercase" data-i18n="articles-btn" href="../simpleTherapy/papers.html#articles">Read more . . .</a>
             </div>
         </div>
     </section>
@@ -328,9 +328,9 @@
     <section class="page-section" id="team">
         <div class="container">
             <div class="text-center">
-                <h2 data-i18n="[html]team.1" class="section-heading text-uppercase">Meet Our Team</h2>
-                <h3 data-i18n="[html]team.2" class="section-subheading text-muted">Who are our team members</h3>
-                <p data-i18n="[html]team.3" class="main-text" style="margin-bottom:6rem">
+                <h2 data-i18n="team-title" class="section-heading text-uppercase">Meet Our Team</h2>
+                <h3 data-i18n="team-subtitle" class="section-subheading text-muted">Who are our team members</h3>
+                <p data-i18n="team-intro" class="main-text" style="margin-bottom:6rem">
                     Our team consists of therapists, researchers and practitioners with multiple years of experience
                     dedicated to provide the best service in order for our client’s to achieve emotional and mental
                     well-being.</p>
@@ -340,30 +340,30 @@
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember1">
                             <img class="mx-auto rounded-circle" src="assets/img/team/Radost.jpg" alt="Biography of Radost Ovagimyan" />
-                            <h4 data-i18n="[html]team.4" id="nameTM" class="my-3">Radost Ovagimyan</h4>
-                            <p data-i18n="[html]team.5" class="text-muted">Clinical psychologist<br>Psychotherapist</p>
+                            <h4 data-i18n="team-memb-1" id="nameTM" class="my-3">Radost Ovagimyan</h4>
+                            <p data-i18n="[html]team-memb-1-sub" class="text-muted">Clinical psychologist<br>Psychotherapist</p>
                         </div>
-                        <a data-i18n="book" class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2642227&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
-                        <a data-i18n="book" class="btn btn-dark btn-social mx-2" href="counseling.simpletherapy@gmail.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2642227&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="counseling.simpletherapy@gmail.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember2">
                             <img class="mx-auto rounded-circle" src="assets/img/team/Rozalina.jpg" alt="Biography of Rozalina Petkova" />
-                            <h4 data-i18n="[html]team.6" id="nameTM" class="my-3">Rozalina Petkova</h4>
-                            <p data-i18n="[html]team.7" class="text-muted">Psychologist and Psychotherapist <br> Cognitive Science Researcher</p>
+                            <h4 data-i18n="team-memb-2" id="nameTM" class="my-3">Rozalina Petkova</h4>
+                            <p data-i18n="[html]team-memb-2-sub" class="text-muted">Psychologist and Psychotherapist <br> Cognitive Science Researcher</p>
                         </div>
-                        <a data-i18n="book" class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2665271&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
-                        <a data-i18n="book" class="btn btn-dark btn-social mx-2" href="mailto:roz.petkova@yahoo.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2665271&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:roz.petkova@yahoo.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember3">
                             <img class="mx-auto rounded-circle" src="assets/img/team/Ralitsa.jpg" alt="Biography of Ralitsa Penkova" />
-                            <h4 data-i18n="[html]team.8" id="nameTM" class="my-3">Ralitsa Penkova</h4>
-                            <p data-i18n="[html]team.9" class="text-muted">Clinical psychologist<br>Psychotherapist</p>
+                            <h4 data-i18n="team-memb-3" id="nameTM" class="my-3">Ralitsa Penkova</h4>
+                            <p data-i18n="[html]team-memb-3-sub" class="text-muted">Clinical psychologist<br>Psychotherapist</p>
                         </div>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2642227&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="counseling.simpletherapy@gmail.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -373,8 +373,8 @@
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember4">
                             <img class="mx-auto rounded-circle" src="assets/img/team/Atanas.jpg" alt="Biography of Atanas Atansov" />
-                            <h4 data-i18n="[html]team.10" id="nameTM" class="my-3">Atanas Atanasov</h4>
-                            <p data-i18n="[html]team.11" class="text-muted">Psychologist <br> Cognitive Science Researcher</p>
+                            <h4 data-i18n="team-memb-4" id="nameTM" class="my-3">Atanas Atanasov</h4>
+                            <p data-i18n="[html]team-memb-4-sub" class="text-muted">Psychologist <br> Cognitive Science Researcher</p>
                         </div>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2665286&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="counseling.simpletherapy@gmail.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -384,8 +384,8 @@
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember5">
                             <img class="mx-auto rounded-circle" src="assets/img/team/Dilyan.jpg" alt="Biography of Dilyan Totev" />
-                            <h4 id="nameTM" class="my-3">Dilyan Totev</h4>
-                            <p class="text-muted">Psychologist <br> Speech-Language Therapist</p>
+                            <h4 id="nameTM" class="my-3" data-i18n="team-memb-5">Dilyan Totev</h4>
+                            <p data-i18n="[html]team-memb-5-sub" class="text-muted">Psychologist <br> Speech-Language Therapist</p>
                         </div>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2665289&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="counseling.simpletherapy@gmail.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -395,8 +395,8 @@
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember6">
                             <img class="mx-auto rounded-circle object-fit: cover" src="assets/img/team/Nikoleta.jpg" alt="Biography of Nikoleta Koleva" />
-                            <h4 id="nameTM" class="my-3">Nikoleta Koleva</h4>
-                            <p class="text-muted">Consultant psychologist<br>Psychotherapist</p>
+                            <h4  data-i18n="team-memb-6" id="nameTM" class="my-3">Nikoleta Koleva</h4>
+                            <p  data-i18n="[html]team-memb-6-sub" class="text-muted">Consultant psychologist<br>Psychotherapist</p>
                         </div>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2665273&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="mailto:n.koleva_psychologist@yahoo.com" aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -406,24 +406,24 @@
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember7">
                             <img class="mx-auto rounded-circle" src="assets/img/team/Polita.jpg" alt="Biography of Polita Karailieva">
-                            <h4 id="nameTM" class="my-3">Polita Karailieva</h4>
-                            <p class="text-muted">Consultant psychologist<br>Psychotherapist</p>
+                            <h4 data-i18n="team-memb-7" id="nameTM" class="my-3">Polita Karailieva</h4>
+                            <p  data-i18n="[html]team-memb-7-sub" class="text-muted">Consultant psychologist<br>Psychotherapist</p>
                         </div>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2665499&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="mailto:Politavnebeto@gmail.com " aria-label="Book an appointment"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="fadeIn" id="detailsMember1" STYLE="display:none">
-                    <h3 class="third-text">About Radost</h3>
-                    <div class="third-text">Radost Ovagimyan is a highly experienced clinical psychologist and psychotherapist based in Stara Zagora. She provides psychological counseling for both children and adults, specializing in a wide range of issues, including developmental disorders, depressive and anxiety disorders, eating disorders, sleep disturbances, sexual dysfunction, and various forms of addiction. She also addresses destructive impulses, behavior control disorders, trauma, and other stress-related conditions.
+                    <h3 data-i18n="team-memb-1-about" class="third-text">About Radost</h3>
+                    <div  data-i18n="[html]team-memb-1-about" class="third-text">Radost Ovagimyan is a highly experienced clinical psychologist and psychotherapist based in Stara Zagora. She provides psychological counseling for both children and adults, specializing in a wide range of issues, including developmental disorders, depressive and anxiety disorders, eating disorders, sleep disturbances, sexual dysfunction, and various forms of addiction. She also addresses destructive impulses, behavior control disorders, trauma, and other stress-related conditions.
                         <br>In addition to her in-person practice, Radost offers online therapy sessions to clients, making her expertise accessible to a wider audience.
                         <br>Educationally, Radost holds a master's degree in Personality Psychology from the University of Veliko Tarnovo "St. St. Cyril and Methodius" (2005) and a master's degree in Consultative Psychology and Clinical Psychology from the South-West University "Neofit Rilski" (2014).
                         <br>Her extensive qualifications include training from respected institutions like the Lisbon University Institute and the European Drugs School. She has completed comprehensive training in various therapeutic approaches, including cognitive-behavioral therapy, schema therapy, dynamic psychotherapeutic interviewing, Montessori method, addiction counseling, neuropsychology, personality psychology, psychodiagnostics, and more.
                     </div>
                     <div class="row my-5">
                         <div class="col-lg-6">
-                            <h5 class="third-text">Education and Qualifications:</h5>
-                            <ul class="third-text">
+                            <h5  data-i18n="team-education" class="third-text">Education and Qualifications:</h5>
+                            <ul  data-i18n="[html]team-memb-1-educ" class="third-text">
                                 <li>Certificate in Addiction Therapy Training; Warsaw; 2017</li>
                                 <li>Certificate: CBT Autumn Symposium 2017 "CBT for Less Commonly Diagnosed Personality Disorders"; 2017</li>
                                 <li>School of Counselors - Training in Addiction Therapy; Warsaw; 2017</li>
@@ -441,23 +441,23 @@
                             </ul>
                         </div>
                         <div class="col-lg-6 ">
-                            <h5 class="third-text">Experience:</h5>
-                            <p class="third-text"> From 2010 to 2019, Radost Ovagimyan served as the Director of the Center for Addictive Behaviors at the Ministry of Health in Stara Zagora. Since 2019, she has been the Director of Human Resources at MBAL Trakia in Stara Zagora.
+                            <h5 data-i18n="team-exp"  class="third-text">Experience:</h5> 
+                            <p data-i18n="[html]team-memb-1-exp" class="third-text"> From 2010 to 2019, Radost Ovagimyan served as the Director of the Center for Addictive Behaviors at the Ministry of Health in Stara Zagora. Since 2019, she has been the Director of Human Resources at MBAL Trakia in Stara Zagora.
                                 <br>Radost develops her private practice at Center Sense. Additionally, Radost has been serving as a supervisor for our team since the beginning of the year.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="fadeIn" id="detailsMember2" STYLE="display:none">
-                    <h3 class="third-text">About Rozalina</h3>
-                    <div class="third-text">Rozalina obtained her bachelor's degree in Psychology in 2016 from the University of Veliko Tarnovo, Bulgaria. In 2015-2016, she completed an internship at the State Psychiatric Hospital in the village of Tserova Koria. In 2019, she furthered her experience through an internship at the Institute of Psychology within the Ministry of Internal Affairs of Bulgaria.
+                    <h3  data-i18n="team-memb-2-about" class="third-text">About Rozalina</h3>
+                    <div data-i18n="[html]team-memb-2-overview"  class="third-text">Rozalina obtained her bachelor's degree in Psychology in 2016 from the University of Veliko Tarnovo, Bulgaria. In 2015-2016, she completed an internship at the State Psychiatric Hospital in the village of Tserova Koria. In 2019, she furthered her experience through an internship at the Institute of Psychology within the Ministry of Internal Affairs of Bulgaria.
                         <br>Rozalina is well-versed in the methods of Positive Psychotherapy and received certification as a Basic Consultant of Positive Psychotherapy in 2018. In 2021, she began studies in a master's program in Cognitive Science at the New Bulgarian University. Concurrently, she initiated her education in a second therapeutic paradigm—the Cognitive-Behavioral Therapy program, accredited by the International Association of Therapists.
                         <br>Rozalina specializes in working with various psychological challenges, including anxiety and depression, phobias, low self-esteem, emotional regulation and personality disorders, when therapy is often recommended as an additional, supportive treatment alongside medical interventions. She also has extensive experience working with foreigners, helping them adapt to new cultures and environments.
                     </div>
                     <div class="row my-5">
                         <div class="col-lg-6">
-                            <h5 class="third-text">Education and Qualifications:</h5>
-                            <ul class="third-text">
+                            <h5 data-i18n="team-education" class="third-text">Education and Qualifications:</h5>
+                            <ul data-i18n="[html]team-memb-2-educ" class="third-text">
                                 <li>2016 BSc Psychology, University of Veliko Tarnovo, Bulgaria;</li>
                                 <li>2018 Certified Basic Consultant of Positive Psychotherapy;</li>
                                 <li>2022 Certificate of completion Introduction to CBT</li>
@@ -465,8 +465,8 @@
                             </ul>
                         </div>
                         <div class="col-lg-6 ">
-                            <h5 class="third-text">Experience:</h5>
-                            <p class="third-text">Rozalina's professional experience includes:
+                            <h5 data-i18n="team-exp" class="third-text">Experience:</h5>
+                            <p data-i18n="[html]team-memb-2-exp" class="third-text">Rozalina's professional experience includes:
                                 <br><br>
                                 Internship at the State Psychiatric Hospital in Tserova Koria, Bulgaria, from 2015 to 2016.
                                 Internship at the Institute of Psychology within the Ministry of Internal Affairs of Bulgaria in 2019.
@@ -483,12 +483,12 @@
                         </div> -->
                 </div>
                 <div class="fadeIn" id="detailsMember3" STYLE="display:none">
-                    <h3 class="third-text">About Ralitsa</h3>
-                    <div class="third-text">Ralitsa is a dedicated professional with experience in both corporate and therapeutic environments. She brings a compassionate and client-centered approach to her work, focusing on creating a safe and supportive space for individuals seeking guidance and assistance. Ralitsa is committed to helping clients explore their thoughts, emotions, and experiences, fostering personal growth and emotional well-being. Her warm and empathetic demeanor, combined with her corporate experience, makes her a valuable resource for those navigating life's challenges. She is passionate about empowering her clients to overcome obstacles and achieve positive change.</div>
+                    <h3 data-i18n="team-memb-3-about" class="third-text">About Ralitsa</h3>
+                    <div data-i18n="team-memb-3-overview" class="third-text">Ralitsa is a dedicated professional with experience in both corporate and therapeutic environments. She brings a compassionate and client-centered approach to her work, focusing on creating a safe and supportive space for individuals seeking guidance and assistance. Ralitsa is committed to helping clients explore their thoughts, emotions, and experiences, fostering personal growth and emotional well-being. Her warm and empathetic demeanor, combined with her corporate experience, makes her a valuable resource for those navigating life's challenges. She is passionate about empowering her clients to overcome obstacles and achieve positive change.</div>
                     <div class="row my-5">
                         <div class="col-lg-6 third">
                             <h5 class="third-text">Education and Qualifications:</h5>
-                            <ul class="third-text">
+                            <ul data-i18n="[html]team-memb-3-educ" class="third-text">
                                 <li>Bachelor's degree in Marketing and Advertising from New Bulgarian University, with a second specialization in Human Resources.</li>
                                 <li>Master's degree in Applied Psychology from the University of Plovdiv.</li>
                                 <li>Additional postgraduate qualification in Counseling Psychology from Veliko Tarnovo University.</li>
@@ -504,7 +504,7 @@
                         </div>
                         <div class="col-lg-6 ">
                             <h5 class="third-text">Experience:</h5>
-                            <ul class="third-text">
+                            <ul data-i18n="[html]team-memb-3-exp" class="third-text">
                                 <li>Worked for two years as a Human Resources Assistant at Hewlett-Packard, Bulgaria.</li>
                                 <li>Later worked in the Human Resources department at the multiprofile hospital MBAL "Hadzhi Dimitar" in Sliven.</li>
                                 <li>Currently practicing as a counseling psychologist at MBAL Trakia Stara Zagora.</li>
@@ -515,7 +515,7 @@
                     </div>
                 </div>
                 <div class="fadeIn" id="detailsMember4" STYLE="display:none">
-                    <h3 class="third-text">About Atanas</h3>
+                    <h3 data-i18n="team-memb-4-about" class="third-text">About Atanas</h3>
                     <div class="third-text">Atanas is a psychology graduate from the University of Veliko Tarnovo. He is currently pursuing further studies in the field of psychology and psychotherapy, focusing on cognitive science and health psychology through two Master's programs. In his practice, he primarily utilizes cognitive-behavior therapy, offering a flexible and individualized approach tailored to each client's specific needs. Atanas provides online consultations in multiple languages, including Bulgarian, English, and Spanish.</div>
                     <!-- <div class="row my-5">
                         <div class="col-lg-6">
@@ -539,12 +539,12 @@
                     </div> -->
                 </div>
                 <div class="fadeIn" id="detailsMember5" STYLE="display:none">
-                    <h3 class="third-text">About Dilyan</h3>
-                    <div class="third-text">Dilyan completed his Bachelor's degree in Psychology (2016) and a Master's degree in Applied Psychology (2018) at the University of Veliko Tarnovo "St. St. Cyril and Methodius." Currently (since 2022), he is a doctoral student in Educational and Developmental Psychology at the same university. In 2023, he completed a Master's degree in Speech-Language Pathology at Shumen University "Bishop Konstantin Preslavski." Dilyan has 5 years of experience as a psychologist, primarily working with children and their parents in both preschools and private practice.</div>
+                    <h3 data-i18n="team-memb-5-about" class="third-text">About Dilyan</h3>
+                    <div data-i18n="team-memb-5-overview" class="third-text">Dilyan completed his Bachelor's degree in Psychology (2016) and a Master's degree in Applied Psychology (2018) at the University of Veliko Tarnovo "St. St. Cyril and Methodius." Currently (since 2022), he is a doctoral student in Educational and Developmental Psychology at the same university. In 2023, he completed a Master's degree in Speech-Language Pathology at Shumen University "Bishop Konstantin Preslavski." Dilyan has 5 years of experience as a psychologist, primarily working with children and their parents in both preschools and private practice.</div>
                     <div class="row my-5">
                         <div class="col-lg-6">
                             <h5 class="third-text">Education and Qualifications:</h5>
-                            <ul class="third-text">
+                            <ul data-i18n="[html]team-memb-5-educ" class="third-text">
                                 <li>Bachelor's in Psychology, University of Veliko Tarnovo "St. St. Cyril and Methodius" (2016)</li>
                                 <li>Master's in Applied Psychology, University of Veliko Tarnovo "St. St. Cyril and Methodius" (2018)</li>
                                 <li>Master's in Speech-Language Pathology, Shumen University "Bishop Konstantin Preslavski" (2023)</li>
@@ -552,7 +552,7 @@
                         </div>
                         <div class="col-lg-6 ">
                             <h5 class="third-text">Experience:</h5>
-                            <ul class="third-text">
+                            <ul data-i18n="[html]team-memb-5-exp" class="third-text">
                                 <li>Psychologist in municipal kindergartens, Municipality of Isperih (2018 – 2022)</li>
                                 <li>Psychologist at "Sunshine" Kindergarten, Isperih (2020 – 2022)</li>
                                 <li>Private psychological practice since 2022</li>
@@ -561,12 +561,12 @@
                     </div>
                 </div>
                 <div class="fadeIn" id="detailsMember6" STYLE="display:none">
-                    <h3 class="third-text">About Nikoleta</h3>
-                    <div class="third-text">Nikoleta graduated in Psychology from the University of Veliko Tarnovo "St. St. Cyril and Methodius." She also completed postgraduate qualifications as a Psychologist Consultant. In her practice, she utilizes various methods, including metaphorical cards, cognitive-behavioral therapy approaches, schema therapy, and art therapy. She offers online consultations in the Bulgarian language and primarily works with adults.</div>
+                    <h3 data-i18n="team-memb-6-about" class="third-text">About Nikoleta</h3>
+                    <div data-i18n="team-memb-6-overview" class="third-text">Nikoleta graduated in Psychology from the University of Veliko Tarnovo "St. St. Cyril and Methodius." She also completed postgraduate qualifications as a Psychologist Consultant. In her practice, she utilizes various methods, including metaphorical cards, cognitive-behavioral therapy approaches, schema therapy, and art therapy. She offers online consultations in the Bulgarian language and primarily works with adults.</div>
                     <div class="row my-5">
                         <div class="col-lg-6">
                             <h5 class="third-text">Education and Qualifications</h5>
-                            <ul class="third-text">
+                            <ul  data-i18n="[html]team-memb-6-educ" class="third-text">
                                 <li>Psychologist - Psychology Major - University of Veliko Tarnovo "St. St. Cyril and Methodius"</li>
                                 <li>Psychologist Consultant - Consultative Psychology - University of Veliko Tarnovo "St. St. Cyril and Methodius"</li>
                                 <li>Assistant Educator - "Love Yourself First" Association - Veliko Tarnovo, Bulgaria</li>
@@ -582,14 +582,14 @@
                     </div>
                 </div>
                 <div class="fadeIn" id="detailsMember7" style="display: none;">
-                    <h3 class="third-text">About Polita</h3>
-                    <div class="third-text">Polita Karailieva graduated with a Master's degree in Psychology from St. Cyril and St. Methodius University in Veliko Tarnovo, and holds a qualification in Child and Youth Counseling. She also possesses a Certificate in Personal Experience in Psychodrama and a Certificate in Dynamic Interviewing.<br>
+                    <h3 data-i18n="team-memb-7-about" class="third-text">About Polita</h3>
+                    <div data-i18n="team-memb-7-overview" class="third-text">Polita Karailieva graduated with a Master's degree in Psychology from St. Cyril and St. Methodius University in Veliko Tarnovo, and holds a qualification in Child and Youth Counseling. She also possesses a Certificate in Personal Experience in Psychodrama and a Certificate in Dynamic Interviewing.<br>
                         Polita has experience working with children and adolescents. She worked as a mentor-educator at the unique School for Socially Disadvantaged Children "Dimitar Ekimov" in the village of Rusalja for three years. Following that, she worked as a psychologist at the school. She also completed a 6-month internship as an Assistant Art Therapist at a Day Center for individuals with mental disorders.<br>
                         In her practice, she utilizes techniques from Cognitive-Behavioral Therapy, Viktor Frankl's Logotherapy, and Art Therapy. Polita's work focuses on assisting parents, children, and adolescents aged 7 to 18 who are dealing with issues such as anxiety, search for meaning (noogenic neurosis), depression, or self-esteem problems.</div>
                     <div class="row my-5">
                         <div class="col-lg-6">
                             <h5 class="third-text">Education and Qualifications</h5>
-                            <ul class="third-text">
+                            <ul  data-i18n="[html]team-memb-7-educ" class="third-text">
                                 <li>Master's Degree in Psychology from St. Cyril and St. Methodius University in Veliko Tarnovo"</li>
                                 <li>Qualification in Child and Youth Counseling from the University of Veliko Tarnovo</li>
                                 <li>Certificate in Personal Experience in Psychodrama</li>
@@ -601,7 +601,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <p class="main-text">If you're ready to enhance your well-being or have any questions, feel free to reach out, so can discuss if our approach is the right fit for you.</p>
+                    <p data-i18n="team-conclusion" class="main-text">If you're ready to enhance your well-being or have any questions, feel free to reach out, so can discuss if our approach is the right fit for you.</p>
                 </div>
             </div>
         </div>
@@ -629,9 +629,9 @@
     <section class="page-section" id="contact">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Contact Us</h2>
+                <h2  data-i18n="contac-title" class="section-heading text-uppercase">Contact Us</h2>
                 <div class="col-lg-8 mx-auto text-center">
-                    <p class="large">You can find us by phone, email, social media platforms, or by connecting with one of our professional profiles.</p>
+                    <p  data-i18n="contac-subtitle" class="large">You can find us by phone, email, social media platforms, or by connecting with one of our professional profiles.</p>
                 </div>
             </div>
             <div class="row">
@@ -639,7 +639,7 @@
                     <span class="fa-stack fa-3x">
                         <i class="fas fa-phone"></i>
                     </span>
-                    <h4 class="my-3">By phone</h4>
+                    <h4  data-i18n="contac-phone" class="my-3">By phone</h4>
                     <a class="text-muted">Rozalina Petkova: </a>
                     <a href="tel: +359883462810">+359883462810</a>
                 </div>
@@ -647,7 +647,7 @@
                     <span class="fa-stack fa-3x">
                         <i class="fas fa-envelope"></i>
                     </span>
-                    <h4 class="my-3">By email</h4>
+                    <h4  data-i18n="contact-email" class="my-3">By email</h4>
                     <ul class="list-unstyled">
                         <li><a href="mailto:counseling.simpletherapy@gmail.com">counseling.simpletherapy@gmail.com</a></li>
                         <li><a href="mailto:roz.petkova@mail.com">roz.petkova@gmail.com</a></li>
@@ -657,8 +657,8 @@
                     <span class="fa-stack fa-3x">
                         <i class="fas fa-calendar"></i>
                     </span>
-                    <h4 class="my-3">Schedule an appointment</h4>
-                    <a href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf?pId=1051962">Click here to check our availability.</a>
+                    <h4  data-i18n="contact-appointment" class="my-3">Schedule an appointment</h4>
+                    <a  data-i18n="contact-appointment-btn" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf?pId=1051962">Click here to check our availability.</a>
                 </div>
             </div>
         </div>
