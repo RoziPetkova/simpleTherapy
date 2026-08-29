@@ -22,8 +22,12 @@ let contentFile = {};
 let i18n = $.i18n()
 
 function translate(locale) {
-    i18n.locale = locale
-    $('body').i18n();
+    if (locale === 'en')
+        location.reload()
+    else {
+        i18n.locale = locale
+        $('body').i18n();
+    }
 
     return locale === 'bg' ? 'en' : 'bg';
 }

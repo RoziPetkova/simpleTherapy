@@ -27,8 +27,8 @@
 }
 
 header.masthead{
-  padding-top: 40vh;
-  padding-bottom: 20vh;
+  padding-top: 35vh;
+  padding-bottom: 5vh;
   text-align: center;
   color: #fbfffe;;
   position: relative;
@@ -43,17 +43,17 @@ header.masthead{
 header.masthead .masthead-heading {
   font-size: 3.2vmax;
   font-weight: 500;
-  line-height: 3.25rem;
-  margin-bottom: 25vh;
-  font-family: 'Raleway', sans-serif;
+  line-height: normal;
+  font-family: 'Dancing Script', serif;
   text-shadow: 1px 1px 10px #212529;
+  margin-bottom: 2.5rem;
 }
 
 header.masthead .masthead-subheading {
   font-size: 2.9vmax;
   font-style: inherit;
   line-height: normal;
-  font-family: 'Dancing Script', serif;
+  font-family: 'Raleway', sans-serif;
   text-shadow: 1px 1px 10px #212529;
   margin-bottom: 2.5rem;
 }
@@ -86,6 +86,7 @@ header.masthead .masthead-subheading {
   height: 50%;
   position: absolute;
   bottom: 0%;
+  right: 0%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(36, 30, 30, 0.30) 100%);
 }
 
@@ -613,3 +614,13 @@ input[type="radio"]:checked + label{
   background-position-x: center;
 }
 
+#headingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%
+}
+
+#scheduleButton {
+  margin-top: auto
+}

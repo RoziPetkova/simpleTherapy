@@ -13,9 +13,11 @@
     <script src="https://use.fontawesome.com/releases/v6.4.0/js/all.js" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.9/jquery.i18n.min.js" integrity="sha512-EkS8Kq86l7dHt/dOBniHgtYvAScDqFw/lIPX5VCwaVKsufs0pY44I2cguqZ45QaFOGGwVd3T1nXvVJYIEjRsjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.9/jquery.i18n.messagestore.min.js" integrity="sha512-Ejnbo8F6SIU18Tj9hZyJzVbhWtbC40Fyvuyfs6InZloy043xEvICul37BxuUGZG1ia8RQky7uBOwBdLsGKDu1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+    <!-- <script src="js/jquery.i18n.patched.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.9/jquery.i18n.min.js" integrity="sha512-EkS8Kq86l7dHt/dOBniHgtYvAScDqFw/lIPX5VCwaVKsufs0pY44I2cguqZ45QaFOGGwVd3T1nXvVJYIEjRsjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.9/jquery.i18n.messagestore.min.js" integrity="sha512-Ejnbo8F6SIU18Tj9hZyJzVbhWtbC40Fyvuyfs6InZloy043xEvICul37BxuUGZG1ia8RQky7uBOwBdLsGKDu1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
@@ -69,10 +71,10 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead">
-        <div class="container">
-            <div class="masthead-subheading" data-i18n="welcome">Welcome to Simple Therapy!</div>
-            <div class="masthead-heading text-uppercase" data-i18n="welcome-subheading">A Safe Space to Be Yourself</div>
-            <a class="btn btn-header btn-xl text-uppercase"  data-i18n="header-button" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf?pId=1051962">Schedule an Appointment</a>
+        <div id="headingContainer" class="container-xxl">
+            <div class="masthead-heading" data-i18n="welcome">Welcome to Simple Therapy!</div>
+            <div class="masthead-subheading text-uppercase" data-i18n="welcome-subheading">A Safe Space to Be Yourself</div>
+            <a id="scheduleButton" class="btn btn-header btn-xl text-uppercase"  data-i18n="header-button" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf?pId=1051962">Schedule an Appointment</a>
         </div>
         <div class="containerFade"></div>
     </header>
@@ -361,8 +363,8 @@
                 <div class="col-lg-4">
                     <div class="team-member" href="">
                         <div class="infoTM" id="infoMember3">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/Ralitsa.jpg" alt="Biography of Ralitsa Penkova" />
-                            <h4 data-i18n="team-memb-3" id="nameTM" class="my-3">Ralitsa Penkova</h4>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/Gergana.jpg" alt="Biography of Ralitsa Penkova" />
+                            <h4 data-i18n="team-memb-3" id="nameTM" class="my-3">Gergana Georgieva</h4>
                             <p data-i18n="[html]team-memb-3-sub" class="text-muted">Clinical psychologist<br>Psychotherapist</p>
                         </div>
                         <a class="btn btn-dark btn-social mx-2" href="https://www.fresha.com/a/simple-therapy-sofia-ulitsa-doyran-29-nr6j28kf/booking?employeeId=2642227&pId=1051962" aria-label="Book an appointment"><i class="fa fa-calendar" aria-hidden="true"></i></a>
@@ -483,8 +485,8 @@
                         </div> -->
                 </div>
                 <div class="fadeIn" id="detailsMember3" STYLE="display:none">
-                    <h3 data-i18n="team-memb-3-about" class="third-text">About Ralitsa</h3>
-                    <div data-i18n="team-memb-3-overview" class="third-text">Ralitsa is a dedicated professional with experience in both corporate and therapeutic environments. She brings a compassionate and client-centered approach to her work, focusing on creating a safe and supportive space for individuals seeking guidance and assistance. Ralitsa is committed to helping clients explore their thoughts, emotions, and experiences, fostering personal growth and emotional well-being. Her warm and empathetic demeanor, combined with her corporate experience, makes her a valuable resource for those navigating life's challenges. She is passionate about empowering her clients to overcome obstacles and achieve positive change.</div>
+                    <h3 data-i18n="team-memb-3-about" class="third-text">About Gergana</h3>
+                    <div data-i18n="team-memb-3-overview" class="third-text">Gergana holds a Bachelor’s degree in Psychology and Master’s degree in Clinical Psychology from New Bulgarian University. Her clinical experience includes internships at the Military Medical Academy, Nadezhda Hospital, the Animus Association Foundation, and the Change is Life rehabilitation center, where she currently also works as a practicing therapist. She has worked with children on the autism spectrum at the university’s therapy center and now works primarily with adults in both rehabilitation and private practice. Her areas of focus include addiction, trauma, anxiety, emotional regulation, and identity development, approached with professionalism, deep listening, and an unwavering belief in each client’s potential for growth. Gergana applies a holistic and integrative approach to support individuals in their healing process. She creates a safe, empathetic, and nonjudgmental space where each person is encouraged to explore their inner world and build lasting change. Her work is grounded in cognitive-behavioral therapy (CBT), Acceptance and Commitment Therapy (ACT), clinical hypnotherapy, and mentalisation-based tools, and is enriched by her specialization and training in art therapy. She tailors each intervention to the individual, blending structure with creativity and compassion.</div>
                     <div class="row my-5">
                         <div class="col-lg-6 third">
                             <h5 class="third-text">Education and Qualifications:</h5>
